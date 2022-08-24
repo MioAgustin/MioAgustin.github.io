@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Style - HOME</title>
+</head>
+<body>
+    <audio id="audio">
+        <source src="./img/music.mp3" type="audio/mp3">
+    </audio>
+    <div class="inner-cursor" id="inner"></div>
+    <div class="outer-cursor" id="outer"></div>
+    <div class="container-nav" id="nav">
+        <div class="container-nav_one">
+            <h2 onpointerover="asr()" onpointerout="asr2()" class="cool">クールなスタイル</h2>
+            <div class="imgOne" onpointerover="asr()" onpointerout="asr2()"></div>
+            <h2 class="cool" onpointerover="asr()" onpointerout="asr2()">COOL STYLE</h2>
+            <div class="container-three" onpointerover="asr()" onpointerout="asr2()">
+                <span class="checkMusic" id="musicOne" onclick="musicPlay()"></span>
+            </div>
+            <div class="container-nav_two">
+                <div class="container-nav_two-center" id="menu" onclick="menuA(), menuAX()" onpointerover="asr()" onpointerout="asr2()">
+                    <div class="oneMenu" id="oneMenu"></div>
+                    <div class="twoMenu" id="twoMenu"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-nav_links" id="links">
+            <div class="container-nav_links-center">
+                <ul >
+                    <li onpointerover="asr()" onpointerout="asr2()"><h1><a href="#oneContainer" class="links2" onclick="asr3()">HOME</a></h1></li>
+                    <li onpointerover="asr()" onpointerout="asr2()" ><h1><a href="#twocontainer" class="links2" onclick="asr3()">SOBRE MI</a></h1></li>
+                    <li onpointerover="asr()" onpointerout="asr2()"><h1><a href="#" class="links2" onclick="asr3()">TRABAJOS</a></h1></li>
+                    <li onpointerover="asr()" onpointerout="asr2()"><h1><a href="#" class="links2" onclick="asr3()">CONTACTO</a></h1></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="one-container" id="oneContainer">
+        <div class="one-container_center">
+            <h1 class="hi" onpointerover="asr()" onpointerout="asr2()">Hi everbody, this is CoolStyle</h1>
+            <br>
+            <h3 class="hi" onpointerover="asr()" onpointerout="asr2()">Are you ready?.</h3>
+        </div>
+        <div class="arrow-container" id="arrowContainer">
+            <div class="arro-container_two">
+                <img src="./img/scrollOne.png" alt="" class="arrowOne">
+                <div class="arrow-two-container">
+                    <img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="two-container" id="twocontainer">
+       <div class="groupOne" id="containerA">
+            <div class="groupOne-img" id="groupOneImg">
+                <div class="groupOne-img_center"><img src="https://i.pinimg.com/564x/ef/6f/b6/ef6fb6701c671152946f2b58df6b98c0.jpg" alt=""></div>
+            </div>
+            <div class="groupOne-text" id="groupOneText">
+                <h1>Soy Mio Aguntin</h1>
+                <p>Desarrollador Full Stack</p>
+            </div>
+       </div>
+       <div class="groupTwo" id="containerB" onpointerover="asr4()" onpointerout="asr2()">
+            <div class="groupTwo-title" >
+                <h3 id="groupTwoTitle">Un poco sobre mi ;)</h3>
+            </div>
+            <div class="groupTwo-data" id="groupTwoData">
+                <p>Vivo en Argentina Buenos Aires - Capital Federal, me encanta programar, diseñar y crear sitios web, también amo los cats. Me inicie en la informática hace más de 3 años, tengo 17 años soy autodidacta​ en todos los ámbitos ya sea sobre manejos de sistemas operativos, lenguajes de programación, redes sociales, diseño web, etc etc... Planeo entrar a la universidad al terminal el secundario para formarme en la carrera de Ing. de software.</p>
+                <br>
+                <p>Mis habilidades <span class="auto-type"></span></p>
+                <div class="button">
+                    <a href="#home" class="buttonWork">HOME</a>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="threecontainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["HTML", "CSS", "JAVASCRIPT", "PHP", "PYTHON", "LINUX"],
+            typeSpeed: 350,
+            backSpeed: 150,
+            loop: true
+        });
+
+    </script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
