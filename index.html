@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cool Style</title>
+</head>
+<body id="body">
+    <audio id="audio">
+        <source src="./img/music.mp3" type="audio/mp3">
+    </audio>
+    <div class="inner-cursor" id="inner"></div>
+    <div class="outer-cursor" id="outer"></div>
+    <div class="nav" id="nav">
+        <div class="one">
+            <div class="navOne">
+                <div class="navOneCool" onpointerover="cursorHover()" onpointerout="cursorOut()">
+                    <h1 id="coolOne" class="coolLetter">クールなスタイル</h1>
+                    <div class="navOne-Column" id="navOneColumn"></div>
+                    <h1 id="coolTwo" class="coolLetter">COOL STYLE</h1>
+                </div>
+                <div class="musicMenu" onpointerover="cursorHover()" onpointerout="cursorOut()">
+                    <div class="music-container" id="music" onclick="Music()">
+                        <div class="music-circle" id="musiCircle"></div>
+                    </div>
+                    <div class="menu-container" onclick="menuA()">
+                        <div class="menuOne" id="menuOne"></div>
+                        <div class="menuTwo" id="menuTwo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="navTwo" id="navTwo">
+                <div class="navTwo-display">
+                    <div class="navTwo-display_one">
+                        <ul id="fontMenu" id="fontMenu">
+                            <li><a href="#oneContainer" onclick="menuA()">HOME</a></li>
+                            <li><a href="#twoContainer" onclick="menuA()">SOBRE MI</a></li>
+                            <li><a href="#threeContainer" onclick="menuA()">TRABAJOS</a></li>
+                            <li><a href="#fourContainer" onclick="menuA()">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                    <div class="navTwo-display_two" >
+                        <img src="./img/logo_web.png" alt="" id="imgLogo">
+                        <h2 id="fontMenu2">El estilo esta en vos!</h2>
+                        <ul id="fontMenu3" onpointerover="cursorHover()" onpointerout="cursorOut()">
+                            <li><a href="#">INSTAGRAM</a></li>
+                            <li><a href="#">TWITTER</a></li>
+                            <li><a href="#">TELEGRAM</a></li>
+                            <li><a href="#">WHATSAPP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="oneContainer" id="oneContainer">
+        <div class="oneContainer-one">
+            <div class="oneContainer-one_hello">
+                <div class="oneContainer-one_helloTwo">
+                    <h1>Hola todos!, esto es CoolStyle ¿estas listo?</h1>
+                </div>
+            </div>
+            <div class="oneContainer-one_links">
+                <ul onpointerover="cursorHover()" onpointerout="cursorOut()">
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">TELEGRAM</a></li>
+                    <li><a href="#">WHATSAPP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="oneContainer-Two" id="scrollContainer">
+            <img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="imgScrollOne">
+            <img src="./img/scrollOne.png" alt="" class="imgScrollTwo">
+        </div>
+    </div>
+    <div class="twoContainer" id="twoContainer">
+        <div class="twoContainer-one">
+            <div class="twoContainer-one_1">
+                <img src="./img/me.jpg" alt="Photo of me" class="imgMe">
+                <h1>Soy <span class="auto-type"></span></h1>
+            </div>
+            <div class="twoContainer-one_2" id="oneClickMe">
+                <div class="twoContainer-text">
+                    <h1 onpointerover="cursorHover()" onpointerout="cursorOut()">Un poco sobre mi :)</h1>
+                    <p onpointerover="cursorHover()" onpointerout="cursorOut()">Vivo en Argentina Buenos Aires - Capital Federal, me encanta programar, diseñar y crear sitios web, también amo los cats. Me inicie en la informática hace más de 3 años, tengo 17 años soy autodidacta​ en todos los ámbitos ya sea sobre manejos de sistemas operativos, lenguajes de programación, redes sociales, diseño web, etc etc... Planeo entrar a la universidad al terminal el secundario para formarme en la carrera de Ing. de software.</p>
+                    <h3>Mis habilidades</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="button-twoCon-4" onclick="clickMe()">
+                    CLICK ME
+                </div>
+            </div>
+            <div class="twoContainer-one_3" id="twoClickMe"></div>
+            <div class="twoContainer-one_4" id="threeClickMe">
+                <div class="button-twoCon-4" onclick="clickMe()" id="buttonOne">
+                    CLICK ME
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="threeContainer" id="threeContainer">
+        <h1>Hello Works</h1>
+    </div>
+    <div class="fourContainer" id="fourContainer">
+        <p>Este es tu momento!</p>
+        <h1 onpointerover="cursorHover(), copyContact()" onpointerout="cursorOut()">contact@coolstyle.online</h1>
+        <ul onpointerover="cursorHover()" onpointerout="cursorOut()">
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">TELEGRAM</a></li>
+            <li><a href="#">WHATSAPP</a></li>
+        </ul>
+        <div class="footer">
+            <img src="./img/logo_web.png" alt="">
+            <h2>El estilo esta en vos!</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Mio Agustin", "Dev Full Stack"],
+            typeSpeed: 100,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
